@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./src/css/styles.css">
     <script src="src/js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.3.3/roundslider.css" />
+    <script defer asyq src="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.3.3/roundslider.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <title>Sound Board</title>
 </head>
 <body>
-    <div>
-        <input type="range" min="300" max="500" value="10" class="slider" onchange="updatesound(value)" id="myRange">
-    </div>
-           <!-- <input type="range" min="200" max="500" value="200" change="updatesound(value)" -->
-    <button>try now</button>
+    
+   <input orient="vertical" type="range" min="120" max="300" value="120" class="slider" onchange="updatesound(value)" id="myRange">
+   <input orient="vertical" type="range" min="300" max="500" value="300" class="slider" onchange="updatesound2(value)" style="left: 20vw;">
+     
 </body>
 </html>
