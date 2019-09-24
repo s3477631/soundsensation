@@ -20,7 +20,7 @@ function updatesound2(value){
    o.connect(g)
    g.connect(context.destination)
    o.start(0)
-   o.stop(0.2)
+   o.stop(0.3)
    // sets latency
 }
 

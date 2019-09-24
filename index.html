@@ -13,8 +13,12 @@
 </head>
 <body>
     
-   <input orient="vertical" type="range" min="120" max="300" value="120" class="slider" onchange="updatesound(value)" id="myRange">
-   <input orient="vertical" type="range" min="300" max="500" value="300" class="slider" onchange="updatesound2(value)" style="left: 20vw;">
-     
+   <input orient="vertical" type="range" min="15" max="300" value="120" class="slider" onchange="updatesound(value)" id="myRange">
+   <input type="text" placeholder="track 1 latency"/>
+   <input type="text" placeholder="track 2 latency"/>
+   <div class="backgroundslider"> 
+        <input orient="vertical" type="range" min="300" max="500" value="300" class="slider" onchange="updatesound2(value)" style="left: 20vw;">
+   </div>
+
 </body>
 </html>
