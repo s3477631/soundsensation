@@ -4,28 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <script src="src/js/script.js"></script>
+    <title>Sound Board</title>
 </head>
 <body>
-    <style>
-        button {
-            height: 25vh; 
-            width: 25vw; 
-            display: flex; 
-            justify-content: center; 
-            align-self: center;
-        }
-    </style>
     <button onclick="example4()">try now</button>
-    <script>
-        function example4() {
-            var context = new AudioContext()
-var o = context.createOscillator()
-var  g = context.createGain()
-o.connect(g)
-g.connect(context.destination)
-o.start(0)
-        }
-    </script>
 </body>
 </html>

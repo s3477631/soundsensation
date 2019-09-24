@@ -1,0 +1,14 @@
+button {
+    height: 25vh; 
+    width: 25vw; 
+    font-size: 4rem;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px #bbb;
+    background-color: rgb(23, 141, 252);
+
+    &:hover{
+        cursor: pointer;
+    }
+}

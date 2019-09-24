@@ -1,0 +1,16 @@
+button {
+  height: 25vh;
+  width: 25vw;
+  font-size: 4rem;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  -webkit-box-shadow: 2px 2px 2px #bbb;
+          box-shadow: 2px 2px 2px #bbb;
+  background-color: #178dfc;
+}
+
+button:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */
