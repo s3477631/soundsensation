@@ -1,31 +1,20 @@
-//    var context = new AudioContext()
-//    var o = context.createOscillator()
-//    var  g = context.createGain()
-//    var frequency = parseFloat(value);
-//    o.frequency.value = frequency
-//    o.connect(g)
-//    g.connect(context.destination)
-//    o.start(0)
-//    o.stop(0.3)
-
-let octave = 6
-
+let octave = 4
+let impact = 3
 function usersounds(note){
+    console.log(octave)
     let context = new AudioContext()
     let o = context.createOscillator()
     let  g = context.createGain()
     const freq = [261.63, 293.66, 329.63, 349.23, 392.00, 440.00, 493.88, 523.25]
     let frequency = freq[note];
-    o.frequency.value = frequency
+    o.frequency.value = frequency/octave
     o.connect(g)
     g.connect(context.destination)
     o.start(0)
-    o.stop(0.3)
-    console.log(octave)
+    o.stop(impact)
+ 
 }
 function userinput(e) {
-console.log(octave);
-octave+=2
     switch(e.code) {
         case "KeyA":
             note = 0 
@@ -60,11 +49,22 @@ octave+=2
         usersounds(note)
         break;
         case "KeyG":
-
+            if (octave == 8){
+                octave = 0
+            }
+             else {
+                octave++
+             }  
+             document.getElementById("output").innerHTML = octave
         break;
         case "KeyH":
-        
+            impact-=0.1;
+        document.getElementById("impactouput").innerHTML = impact.toFixed(2);
         break; 
+        case "KeyU":
+            impact+=0.1;
+        document.getElementById("impactouput").innerHTML = impact.toFixed(2);
+        break;
         case "KeyJ":
             note = 4
         document.getElementById("g").setAttribute("style", "background-color: red; padding: 4.2%")
