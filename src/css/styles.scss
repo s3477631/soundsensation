@@ -1,11 +1,13 @@
 div {
   div {
-    border: 1px solid black;
+    border: 10px solid black;
+    border-radius: 1.2vw;
     padding: 4%;
     padding-bottom: 80%;
-    background-color: rgb(30, 102, 236);
-    color: white;
-    font-size: 4rem;
+    background-color: rgb(243, 238, 232);
+    color: rgb(199, 33, 33);
+    font-size: 8rem;
+    font-family: sans-serif;
   }
   display: flex;
   width: 100vw;

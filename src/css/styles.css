@@ -7,11 +7,13 @@ div {
 }
 
 div div {
-  border: 1px solid black;
+  border: 10px solid black;
+  border-radius: 1.2vw;
   padding: 4%;
   padding-bottom: 80%;
-  background-color: #1e66ec;
-  color: white;
-  font-size: 4rem;
+  background-color: #f3eee8;
+  color: #c72121;
+  font-size: 8rem;
+  font-family: sans-serif;
 }
 /*# sourceMappingURL=styles.css.map */
