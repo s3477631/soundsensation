@@ -1,5 +1,5 @@
 let octave = 1
-let impact = 0.1
+let impact = 0.4
 function usersounds(note){
     console.log(octave)
     let context = new AudioContext()
