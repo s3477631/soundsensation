@@ -7,7 +7,7 @@ function usersounds(note){
     let  g = context.createGain()
     const freq = [261.63, 293.66, 329.63, 349.23, 392.00, 440.00, 493.88, 523.25]
     let frequency = freq[note];
-    o.frequency.value = parseFloat(frequency/octave)
+    o.frequency.value = parseFloat(frequency/octave) * 2
     o.connect(g)
     g.connect(context.destination)
     o.start(0)

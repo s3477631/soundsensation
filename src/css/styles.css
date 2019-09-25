@@ -27,4 +27,10 @@ div div {
 .kbcontainer {
   width: 100vw;
 }
+
+.blackkeys {
+  position: absolute;
+  top: 0;
+  width: 30vw;
+}
 /*# sourceMappingURL=styles.css.map */
