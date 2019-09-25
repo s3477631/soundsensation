@@ -1,5 +1,5 @@
-let octave = 4
-let impact = 3
+let octave = 1
+let impact = 0.1
 function usersounds(note){
     console.log(octave)
     let context = new AudioContext()
@@ -7,7 +7,7 @@ function usersounds(note){
     let  g = context.createGain()
     const freq = [261.63, 293.66, 329.63, 349.23, 392.00, 440.00, 493.88, 523.25]
     let frequency = freq[note];
-    o.frequency.value = frequency/octave
+    o.frequency.value = parseFloat(frequency/octave)
     o.connect(g)
     g.connect(context.destination)
     o.start(0)
@@ -58,11 +58,11 @@ function userinput(e) {
              document.getElementById("output").innerHTML = octave
         break;
         case "KeyH":
-            impact-=0.1;
+            impact-=0.05;
         document.getElementById("impactouput").innerHTML = impact.toFixed(2);
         break; 
         case "KeyU":
-            impact+=0.1;
+            impact+=0.05;
         document.getElementById("impactouput").innerHTML = impact.toFixed(2);
         break;
         case "KeyJ":
