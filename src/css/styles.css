@@ -16,4 +16,11 @@ div div {
   font-size: 8rem;
   font-family: sans-serif;
 }
+
+#modal {
+  background-color: #bbb;
+  width: 50vw;
+  height: 50vh;
+  border-radius: 2vh;
+}
 /*# sourceMappingURL=styles.css.map */

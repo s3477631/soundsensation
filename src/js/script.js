@@ -102,8 +102,13 @@ function userinput(e) {
       }
     }
 
+    function modalshow(){
+        document.getElementById("modal").setAttribute("style", "z-index: 100;")
+    }
 
 window.addEventListener('keydown', userinput)
+
+window.onload("load", modalshow);
 
 function stop(decreaseTime)
 {g.gain.exponentialRampToValueAtTime(0.00001,context.currentTime+decreaseTime)}
