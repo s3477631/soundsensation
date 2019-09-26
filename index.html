@@ -11,30 +11,31 @@
 <body>
         <span style="font-size: 4vh;">octave: </span><span id="output" style="font-size: 4vh;">1</span>
         <span style="font-size: 4vh;">impact: </span><span id="impactouput" style="font-size: 4vh;">0.4</span><span>s</span>
-        <span style="font-size: 3vh;">Notes: A, S, D, F, J, K, L, ;</span><span style="font-size: 3vh;">Controls: G is for cycling through octaves and H and U increase/decrease impact</span>
+        <span style="font-size: 3vh;">Notes: A, S, D, F, J, K, L, ;</span><span style="font-size: 3vh;">Controls: G is for cycling through octaves and H and U increase/decrease impact & N to change instruments</span>
+      <span style="font-size: 4vh;">synth type:</span> <span id="synthtype" style="font-size: 4vh;">Sawtooth</span>
         <div style="position:relative;" class="kbcontainer"> 
     <div id="c">
     <kbd>C</kbd>
     </div>
-    <div id="d">
+    <div onclick="createsound(id)" id="d">
         <kbd>D</kbd>
     </div>
-    <div id="e">
+    <div onclick="createsound(id)" id="e">
         <kbd>E</kbd>
     </div>    
-    <div id="f">
+    <div onclick="createsound(id)" id="f">
         <kbd>F</kbd>
     </div>
-    <div id="g">
+    <div onclick="createsound(id)" id="g">
         <kbd>G</kbd>
     </div>
-    <div id="a">
+    <div onclick="createsound(id)" id="a">
         <kbd>A</kbd>
     </div>
-    <div id="b">
+    <div onclick="createsound(id)" id="b">
         <kbd>B</kbd>
     </div>
-    <div id="cup">
+    <div onclick="createsound(id)" id="cup">
         <kbd>C</kbd>
     </div>
 
