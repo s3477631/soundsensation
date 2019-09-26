@@ -1,18 +1,17 @@
 let octave = 1
 let impact = 0.4
 function usersounds(note){
-    console.log(octave)
+  
     let context = new AudioContext()
     let o = context.createOscillator()
     let  g = context.createGain()
-    const freq = [261.63, 293.66, 329.63, 349.23, 392.00, 440.00, 493.88, 523.25]
-    let frequency = freq[note];
-    o.frequency.value = parseFloat(frequency/octave) * 2
+    let freq = [16.35, 18.35, 20.60, 21.83, 24.50, 27.50, 30.87, 32.70]
+    o.frequency.value = freq[note] * Math.pow(2, octave)
+    console.log(o.frequency.value)
     o.connect(g)
     g.connect(context.destination)
     o.start(0)
     o.stop(impact)
- 
 }
 function userinput(e) {
     switch(e.code) {
@@ -108,7 +107,7 @@ function userinput(e) {
 
 window.addEventListener('keydown', userinput)
 
-window.onload("load", modalshow);
+// window.onload("load", modalshow);
 
 function stop(decreaseTime)
 {g.gain.exponentialRampToValueAtTime(0.00001,context.currentTime+decreaseTime)}
